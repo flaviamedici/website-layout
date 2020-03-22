@@ -96,9 +96,10 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
+    background-color: #360e0c;
+    color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -111,25 +112,26 @@ body {
 
 header,
 footer {
-  background-color: #222;
   height: 80px;
   width: 100%;
- 
 }
 
 main {
-  background-color: #ccc;
   height: 250px;
   width: 100%;
+  border-bottom: #fff 1px solid;
 }
+
+
 
 header,
 footer,
 main {
   /*set display to flex and vertically & horizontally align by setting justify-content and align-items to center*/
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 #div-1,
@@ -144,33 +146,49 @@ main {
   height: auto;
 }
 
+#div-2 {
+    border-left: oldlace 1px solid;
+    border-right: oldlace 1px solid;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
 .wrapper span {
   font-family: 'Lora', sans-serif;
   font-size: 1.3em;
 }
 
 .flex-container {
-  
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   justify-content:space-between;
+  
 }
 
 .flex-items {
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   line-height: 1.5em;
   font-size: 1.6em;
-  background-color: #f16059;
   width: 30%;
   height: 200px;
 }
 
+footer {
+    border-top: #fff 1px solid;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline-block;
+    padding: 10px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
